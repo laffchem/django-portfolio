@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md d-flex flex-column align-items-center pt-5">
+        <img
+          class="img-logo mb-3"
+          src="{% static 'img/logo.png' %}"
+          alt="My logo"
+        />
+        <h1 class="heading-primary text-center pt-3 pb-1">John Laffey</h1>
+        <h2 class="heading-secondary pb-3">
+          A <span class="underlined">Pro</span>grammer
+        </h2>
+        <p class="description-text text-center">Welcome to my portfolio.</p>
+        <p class="description-text text-left">
+          I am a full-stack developer with a background in chemistry & math.
+          Feel free to check out my projects or reach out to me!
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock content %}
