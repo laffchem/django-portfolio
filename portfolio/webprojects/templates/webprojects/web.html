@@ -1,86 +1,85 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1 class="heading-projects text-center mt-5">
-        My Favorite Web & Design Projects!
-      </h1>
-    </div>
-  </div>
-  <div class="row mt-5">
-    <div class="col-lg-4 mb-3 d-flex align-items-stretch card-marg">
-      <div class="card">
-        <img
-          src="{% static 'img/course_project.png' %}"
-          class="card-img-top mb-1"
-          alt="..."
-        />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title mb-3">Fake Meal Prep Project</h5>
-          <p class="card-text mb-5">
-            This project was made as part of a course to learn how to build
-            responsive websites. I could have used bootstrap, but felt that
-            using vanilla html & css was more beneficial to actually understand
-            how bootstrap works.
-          </p>
-          <a
-            href="https://jlaffey.com/Course-Project/"
-            target="_blank"
-            class="btn btn-custom mt-auto"
-            >View!</a
-          >
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="heading-projects text-center mt-5">
+                    My Favorite Web & Design Projects!
+                </h1>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="col-lg-4 mb-3 d-flex align-items-stretch card-marg">
-      <div class="card">
-        <img
-          src="{% static 'img/hour_calc.png' %}"
-          class="card-img-top mb-1"
-          alt="..."
-        />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title mb-3">hour_calc!</h5>
-          <p class="card-text mb-5">
-            This is a project I made for my wife who had to keep track of hours
-            for a national board certification. It was made using bootstrap and
-            flask with a postgresql database. It was hosted on heroku, but now
-            is locally hosted with an sqlite3 database file.
-          </p>
-          <a
-            href="https://github.com/laffchem/hour_calc"
-            target="_blank"
-            class="btn btn-custom mt-auto"
-            >Github repo!</a
-          >
+        <div class="row mt-5">
+            <div class="col-lg-4 mb-3 d-flex align-items-stretch card-marg">
+                <div class="card">
+                    <img
+                            src="{% static 'img/yomama.png' %}"
+                            class="card-img-top mb-1"
+                            alt="..."
+                    />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-3">Yo Mama!</h5>
+                        <p class="card-text mb-5">
+                            This project was made using django, htmx, and django-ninja-rest-framework. I wanted to learn
+                            new skills with making an API and using htmx to make my django application dynamic. It was a
+                            lot of fun to make and still makes me laugh.
+                        </p>
+                        <a
+                                href="https://www.yomama-jokes.com"
+                                target="_blank"
+                                class="btn btn-custom mt-auto"
+                        >View!</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 d-flex align-items-stretch card-marg">
+                <div class="card">
+                    <img
+                            src="{% static 'img/hour_calc.png' %}"
+                            class="card-img-top mb-1"
+                            alt="..."
+                    />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-3">hour_calc!</h5>
+                        <p class="card-text mb-5">
+                            This is a project I made for my wife who had to keep track of hours
+                            for a national board certification. It was made using bootstrap and
+                            flask with a postgresql database. It was hosted on heroku, but now
+                            is locally hosted with an sqlite3 database file.
+                        </p>
+                        <a
+                                href="https://github.com/laffchem/hour_calc"
+                                target="_blank"
+                                class="btn btn-custom mt-auto"
+                        >Github repo!</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 d-flex align-items-stretch card-marg">
+                <div class="card">
+                    <img
+                            src="{% static 'img/MTM.png' %}"
+                            class="card-img-top mb-1"
+                            alt="..."
+                    />
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title mb-3">Musical Time Machine</h5>
+                        <p class="card-text mb-5">
+                            This project was fun because it allowed me to learn web-scraping
+                            while making some cool playlists! All you need to do is input a date
+                            in the correct format and after a couple seconds you will have a top
+                            100 billboards playlist from that point in time!
+                        </p>
+                        <a
+                                href="https://github.com/laffchem/playlist_top100"
+                                target="_blank"
+                                class="btn btn-custom mt-auto"
+                        >Github repo!</a
+                        >
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="col-lg-4 mb-3 d-flex align-items-stretch card-marg">
-      <div class="card">
-        <img
-          src="{% static 'img/MTM.png' %}"
-          class="card-img-top mb-1"
-          alt="..."
-        />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title mb-3">Musical Time Machine</h5>
-          <p class="card-text mb-5">
-            This project was fun because it allowed me to learn web-scraping
-            while making some cool playlists! All you need to do is input a date
-            in the correct format and after a couple seconds you will have a top
-            100 billboards playlist from that point in time!
-          </p>
-          <a
-            href="https://github.com/laffchem/playlist_top100"
-            target="_blank"
-            class="btn btn-custom mt-auto"
-            >Github repo!</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 {% endblock content %}
