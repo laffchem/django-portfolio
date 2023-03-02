@@ -1,169 +1,194 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<main>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 d-flex flex-column align-items-center pt-5">
-        <h1 class="heading-primary text-center">John Laffey</h1>
-        <h3 class="heading-sections text-center mt-5">Objective</h3>
-      </div>
-      <div class="col-md-12 text-start w-50 mx-auto pt-5">
-        <p class="objective">
-          While I am currently employed as a Broward County Public Schools
-          educator, I’ve found my true passion in web design and development.
-          Over the course of the last two years, I’ve self-taught myself several
-          programming languages via online courses and now am pursuing a new
-          career path as a web developer.
-        </p>
-      </div>
-      <div class="col-md-12 d-flex flex-column align-items-center pt-5">
-        <h3 class="heading-sections text-center mt-3">Skills</h3>
-      </div>
-      <div class="col-md-12 text-start w-50 mx-auto pt-5">
-        <ul class="list-group list-group-flush w-50">
-          <li class="list-group-item d-flex gap-3">
-            <img src="{% static 'img/python.png' %}" alt="" />
-            <span><p class="list-text my-auto">Python</p></span>
-          </li>
-          <li class="list-group-item d-flex gap-3">
-            <img src="{% static 'img/html5.png' %}" alt="" />
-            <span><p class="list-text my-auto">HTML</p></span>
-          </li>
-          <li class="list-group-item d-flex gap-3">
-            <img src="{% static 'img/css3.png' %}" alt="" />
-            <span><p class="list-text my-auto">CSS</p></span>
-          </li>
-          <li class="list-group-item d-flex gap-3">
-            <img src="{% static 'img/node-js.png' %}" alt="" />
-            <span><p class="list-text my-auto">JavaScript / Node.js</p></span>
-          </li>
-          <li class="list-group-item d-flex gap-3">
-            <img src="{% static 'img/django.png' %}" alt="" />
-            <span><p class="list-text my-auto">Django & DRF</p></span>
-          </li>
-          <li class="list-group-item d-flex gap-3">
-            <img src="{% static 'img/vuejs.png' %}" alt="" />
-            <span><p class="list-text my-auto">Vuejs</p></span>
-          </li>
-          <li class="list-group-item d-flex gap-3">
-            <img src="{% static 'img/linux.png' %}" alt="" />
-            <span><p class="list-text my-auto">Linux</p></span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-12 d-flex flex-column align-items-center pt-5">
-        <h3 class="heading-sections text-center mt-3">Work</h3>
-      </div>
-      <div class="col-md-12 text-start w-50 mx-auto pt-5">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Chemistry Teacher</p>
-            <p class="resume-text">Broward County Public Schools</p>
-            <p class="resume-text italic-text">2019 - Present</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Tutor</p>
-            <p class="resume-text">
-              Calculus | Chemistry | Python | JavaScript
-            </p>
-            <p class="resume-text italic-text">2019 - Present</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Welder</p>
-            <p class="resume-text">Waste Management & JBT Aerotech</p>
-            <p class="resume-text italic-text">2014 - 2016</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Military Working Dog Handler</p>
-            <p class="resume-text">United States Air Force</p>
-            <p class="resume-text italic-text">2006 - 2013</p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-12 d-flex flex-column align-items-center pt-5">
-        <h3 class="heading-sections text-center mt-3">Recent Projects</h3>
-      </div>
-      <div class="col-md-12 text-start w-50 mx-auto pt-5">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Student Data Notebook</p>
-            <p class="resume-text">Google Colab | pandas | numpy | seaborn</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Omnifood Meal Prep Website</p>
-            <p class="resume-text">Website for Course</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Python Dad Jokes</p>
-            <p class="resume-text">Sends me a dad joke to tell my students</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">hour_calc!</p>
-            <p class="resume-text">
-              Hour tracking flaskwebgui app | stores data with sql
-            </p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">PyCurve</p>
-            <p class="resume-text">Test Score Curving flaskwebgui app</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">Musical Time Machine</p>
-            <p class="resume-text">
-              Creates billboard 100 playlists from specific dates in time
-            </p>
-          </li>
-          <li class="list-group-item">
-            <a href="{% url 'dadjokes' %}"
-              ><p class="resume-text">Test the dad jokes for yourself!</p></a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-12 d-flex flex-column align-items-center pt-5">
-        <h3 class="heading-sections text-center mt-3">Education</h3>
-      </div>
-      <div class="col-md-12 text-start w-50 mx-auto pt-5">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <p class="resume-text bold-text">B.S. in Environmental Science</p>
-            <p class="resume-text italic-text">
-              Concentration in Math & Chemistry
-            </p>
-            <p class="resume-text">May 2019</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">
-              Udemy: 100 Days of Code: The Complete Python Bootcamp
-            </p>
-            <p class="resume-text">March 2022</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">
-              Udemy: Ultimate Web Designer & Web Developer Course
-            </p>
-            <p class="resume-text">May 2022</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">
-              Udemy: Build Responsive Real-World Websites with HTML and CSS
-            </p>
-            <p class="resume-text">September 2022</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">
-              Udemy: The Complete JavaScript Course 2023: From Zero to Expert!
-            </p>
-            <p class="resume-text">October 2022</p>
-          </li>
-          <li class="list-group-item">
-            <p class="resume-text bold-text">
-              Django 4 & Python Full-Stack Developer Masterclass
-            </p>
-            <p class="resume-text">December 2022</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</main>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-column align-items-center pt-5">
+                    <h1 class="heading-primary text-center">John Laffey</h1>
+                    <h3 class="heading-sections text-center mt-5">Objective</h3>
+                </div>
+                <div class="col-md-12 text-start w-50 mx-auto pt-5">
+                    <p class="objective">
+                        While I am currently employed as a Broward County Public Schools
+                        educator, I’ve found my true passion in web design and development.
+                        Over the course of the last two years, I’ve self-taught myself several
+                        programming languages via online courses and now am pursuing a new
+                        career path as a web developer.
+                    </p>
+                </div>
+                <div class="col-md-12 d-flex flex-column align-items-center pt-5">
+                    <h3 class="heading-sections text-center mt-3">Skills</h3>
+                </div>
+                <div class="col-md-12 text-start w-50 mx-auto pt-5">
+                    <ul class="list-group list-group-flush w-50">
+                        <li class="list-group-item d-flex gap-3">
+                            <img src="{% static 'img/python.png' %}" alt=""/>
+                            <span><p class="list-text my-auto">Python</p></span>
+                        </li>
+                        <li class="list-group-item d-flex gap-3">
+                            <img src="{% static 'img/html5.png' %}" alt=""/>
+                            <span><p class="list-text my-auto">HTML</p></span>
+                        </li>
+                        <li class="list-group-item d-flex gap-3">
+                            <img src="{% static 'img/css3.png' %}" alt=""/>
+                            <span><p class="list-text my-auto">CSS</p></span>
+                        </li>
+                        <li class="list-group-item d-flex gap-3">
+                            <img src="{% static 'img/node-js.png' %}" alt=""/>
+                            <span><p class="list-text my-auto">JavaScript / Node.js</p></span>
+                        </li>
+                        <li class="list-group-item d-flex gap-3">
+                            <img src="{% static 'img/django.png' %}" alt=""/>
+                            <span><p class="list-text my-auto">Django & DRF</p></span>
+                        </li>
+                        <li class="list-group-item d-flex gap-3">
+                            <img src="{% static 'img/vuejs.png' %}" alt=""/>
+                            <span><p class="list-text my-auto">Vuejs</p></span>
+                        </li>
+                        <li class="list-group-item d-flex gap-3">
+                            <img src="{% static 'img/linux.png' %}" alt=""/>
+                            <span><p class="list-text my-auto">Linux</p></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-flex flex-column align-items-center pt-5">
+                    <h3 class="heading-sections text-center mt-3">Work</h3>
+                </div>
+                <div class="col-md-12 text-start w-50 mx-auto pt-5">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Chemistry Teacher</p>
+                            <p class="resume-text">Broward County Public Schools</p>
+                            <p class="resume-text italic-text">2019 - Present</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Tutor</p>
+                            <p class="resume-text">
+                                Calculus | Chemistry | Python | JavaScript
+                            </p>
+                            <p class="resume-text italic-text">2019 - Present</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Welder</p>
+                            <p class="resume-text">Waste Management & JBT Aerotech</p>
+                            <p class="resume-text italic-text">2014 - 2016</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Military Working Dog Handler</p>
+                            <p class="resume-text">United States Air Force</p>
+                            <p class="resume-text italic-text">2006 - 2013</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-flex flex-column align-items-center pt-5">
+                    <h3 class="heading-sections text-center mt-3">Recent Projects</h3>
+                </div>
+                <div class="col-md-12 text-start w-50 mx-auto pt-5">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Student Data Notebook</p>
+                            <p class="resume-text">Google Colab | pandas | numpy | seaborn</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">djBugs</p>
+                            <p class="resume-text">
+                                Django Bug Tracker Web App with authentication and CRUD.
+                            </p>
+                            <a href="https://github.com/laffchem/bug-tracker"
+                               target="_blank">
+                                <p class="resume-text">Github repo!</p></a>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">YoMama!</p>
+                            <p class="resume-text">
+                                Django REST API that returns yo mama jokes.
+                            </p>
+                            <a href="https://www.yomama-jokes.com"
+                               target="_blank">
+                                <p class="resume-text">Check it out!</p></a>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Omnifood Meal Prep Website</p>
+                            <p class="resume-text">Website for Course</p>
+                            <a href="https://laffchem.github.io/Course-Project/"
+                               target="_blank">
+                                <p class="resume-text">Check it out!</p></a>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Python Dad Jokes</p>
+                            <p class="resume-text">Sends me a dad joke to tell my students</p>
+                            <a href="{% url 'dadjokes' %}" target="_blank"
+                            ><p class="resume-text">Try it out!</p></a
+                            >
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">hour_calc!</p>
+                            <p class="resume-text">
+                                Hour tracking flaskwebgui app | stores data with sql
+                            </p>
+                            <a href="https://github.com/laffchem/hour_calc" target="_blank">
+                                <p class="resume-text">Github repo!</p></a>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">PyCurve</p>
+                            <p class="resume-text">Test Score Curving flaskwebgui app</p>
+                            <a href="https://github.com/laffchem/pycurve_gui" target="_blank">
+                                <p class="resume-text">Github repo!</p></a>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">Musical Time Machine</p>
+                            <p class="resume-text">
+                                Creates billboard 100 playlists from specific dates in time
+                            </p>
+                            <a href="https://github.com/laffchem/playlist_top100" target="_blank">
+                                <p class="resume-text">Github repo!</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-flex flex-column align-items-center pt-5">
+                    <h3 class="heading-sections text-center mt-3">Education</h3>
+                </div>
+                <div class="col-md-12 text-start w-50 mx-auto pt-5">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">B.S. in Environmental Science</p>
+                            <p class="resume-text italic-text">
+                                Concentration in Math & Chemistry
+                            </p>
+                            <p class="resume-text">May 2019</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">
+                                Udemy: 100 Days of Code: The Complete Python Bootcamp
+                            </p>
+                            <p class="resume-text">March 2022</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">
+                                Udemy: Ultimate Web Designer & Web Developer Course
+                            </p>
+                            <p class="resume-text">May 2022</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">
+                                Udemy: Build Responsive Real-World Websites with HTML and CSS
+                            </p>
+                            <p class="resume-text">September 2022</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">
+                                Udemy: The Complete JavaScript Course 2023: From Zero to Expert!
+                            </p>
+                            <p class="resume-text">October 2022</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="resume-text bold-text">
+                                Django 4 & Python Full-Stack Developer Masterclass
+                            </p>
+                            <p class="resume-text">December 2022</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 {% endblock %}
